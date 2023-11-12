@@ -26,7 +26,7 @@ def main():
     ]
 
     # Create the window
-    window = sg.Window("File Browser", layout)
+    window = sg.Window("Audiofy", layout)
 
     while True:
         event, values = window.read()

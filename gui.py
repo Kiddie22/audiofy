@@ -1,17 +1,7 @@
-import os
 import PySimpleGUI as sg
 import converter
 
 sg.theme('DarkBlue')
-
-
-def get_files_in_directory(folder_path):
-    try:
-        pdf_files = [file for file in os.listdir(
-            folder_path) if file.lower().endswith('.pdf')]
-        return pdf_files
-    except Exception as e:
-        sg.popup_error(f"Error: {str(e)}")
 
 
 def convert_file(selected_file):

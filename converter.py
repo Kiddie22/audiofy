@@ -9,8 +9,6 @@ Add option to listen to sample before downloading
 
 
 def pdfToMp3(selected_file, file_name):
-    print(f'selected_file: {selected_file}')
-    print(f'file_name: {file_name}')
 
     # extract pdf text
     file_no_ext = file_name[:-4]

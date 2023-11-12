@@ -1,9 +1,15 @@
 from PyPDF2 import PdfReader
 import pyttsx3
 
+'''
+TODO
+Save audio as file
+Add option to select variable volumes, voices, speeds
+'''
+
 # extract pdf text
 
-while(True):
+while (True):
     fileName = input(
         "Place your pdf file in the /books folder and enter the file name with the extension: \n")
     try:

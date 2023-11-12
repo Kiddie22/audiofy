@@ -1,0 +1,13 @@
+altgraph==0.17.4
+comtypes==1.2.0
+packaging==23.2
+pefile==2023.2.7
+pyinstaller==6.2.0
+pyinstaller-hooks-contrib==2023.10
+PyPDF2==3.0.1
+pypiwin32==223
+PySimpleGUI==4.60.5
+pyttsx3==2.90
+pywin32==306
+pywin32-ctypes==0.2.2
+setuptools==68.2.2

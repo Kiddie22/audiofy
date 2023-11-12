@@ -20,8 +20,9 @@ def main():
     layout = [
         [sg.Text("Select a pdf to convert:")],
         [sg.Input(key="file_path", enable_events=True,
-                  size=(45, 1)), sg.FilesBrowse()],
-        [sg.Button("Convert"), sg.Button("Exit")],
+                  size=(45, 1)),
+         sg.FilesBrowse(file_types=(("PDF Files", "*.pdf"))),
+         sg.Button("Convert")]
     ]
 
     # Create the window
@@ -38,6 +39,8 @@ def main():
 
             if selected_file:
                 convert_file(selected_file)
+            else:
+                sg.popup("You need to select a PDF first")
 
     window.close()
 

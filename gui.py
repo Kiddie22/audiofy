@@ -21,7 +21,7 @@ def main():
         [sg.Text("Select a pdf to convert:")],
         [sg.Input(key="file_path", enable_events=True,
                   size=(45, 1)),
-         sg.FilesBrowse(file_types=(("PDF Files", "*.pdf"))),
+         sg.FilesBrowse(file_types=(("PDF Files", "*.pdf"),)),
          sg.Button("Convert")]
     ]
 
